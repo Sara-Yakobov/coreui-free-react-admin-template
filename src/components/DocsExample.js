@@ -2,12 +2,14 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { CNav, CNavItem, CNavLink, CTabContent, CTabPane } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
-import { cilCode, cilMediaPlay } from '@coreui/icons'
+import { cilMediaPlay } from '@coreui/icons'
+// cilCode,
 
 const DocsExample = (props) => {
-  const { children, href } = props
+  const { children } = props
+  // , href
 
-  const _href = `https://coreui.io/react/docs/${href}`
+  // const _href = `https://coreui.io/react/docs/${href}`
 
   return (
     <div className="example">
@@ -18,12 +20,12 @@ const DocsExample = (props) => {
             Preview
           </CNavLink>
         </CNavItem>
-        <CNavItem>
+        {/* <CNavItem>
           <CNavLink href={_href} target="_blank">
             <CIcon icon={cilCode} className="me-2" />
             Code
           </CNavLink>
-        </CNavItem>
+        </CNavItem> */}
       </CNav>
       <CTabContent className="rounded-bottom">
         <CTabPane className="p-3 preview" visible>
